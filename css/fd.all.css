@@ -64,6 +64,7 @@
   border-radius:5px;
   outline:unset !important;
   transition:border .2s, box-shadow .2s;
+  display: none;
 }
 #fd-input:hover{
   border:2px solid rgba(210, 210, 210);
