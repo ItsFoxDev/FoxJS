@@ -4,6 +4,7 @@
   --fd-height:250px;
 }
 #fd-container{
+  opacity: 0;
   top:0px;
   left:0px;
   width:100vw;
@@ -17,6 +18,8 @@
   transition:opacity .3s;
 }
 #fd-popup{
+  scale: 0px;
+  transform:translateY(100px);
   transition: scale .3s, transform .3s;
   background:white;
   width:var(--fd-width);
