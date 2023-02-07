@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap');
+:root{
+  --fd-width:500px;
+  --fd-height:250px;
+}
+#fd-container{
+  top:0px;
+  left:0px;
+  width:100vw;
+  height:100vh;
+  position:fixed;
+  background: rgba(0,0,0,.4);
+  display:flex;
+  justify-content:center;
+  flex-wrap: wrap;
+  align-content:center;
+  transition:opacity .3s;
+}
+#fd-popup{
+  transition: scale .3s, transform .3s;
+  background:white;
+  width:var(--fd-width);
+  height:var(--fd-height);
+  border-radius:10px;
+}
+#fd-icon{
+  width:var(--fd-width);
+  text-align:center;
+  display:block;
+  margin-top:30px;
+  font-size:75px;
+}
+#fd-title{
+  font-family:"Montserrat";
+  font-weight:500;
+  width:var(--fd-width);
+  text-align:center;
+  display:block;
+  margin-top:40px;
+  padding:0px;
+  font-size:40px;
+}
+#fd-desc{
+  font-family:"Montserrat";
+  width:calc(var(--fd-width) - 50px);
+  display:block;
+  text-align:center;
+  margin-top:20px;
+  font-size:18px;
+  margin: 20px 25px;
+}
+#fd-input{
+  width:calc(var(--fd-width) - 64px);
+  font-size:18px;
+  padding:5px;
+  margin-left:25px;
+  margin-right:25px;
+  font-family:"Montserrat";
+  font-weight:300;
+  border:2px solid rgba(237, 237, 237);
+  border-radius:5px;
+  outline:unset !important;
+  transition:border .2s, box-shadow .2s;
+}
+#fd-input:hover{
+  border:2px solid rgba(210, 210, 210);
+}
+#fd-input:focus{
+  border:2px solid rgba(210, 210, 210);
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 4px 12px;
+}
+#fd-buttons{
+  margin-top:10px;
+  width:var(--fd-width);
+  display:flex;
+  justify-content:center;
+  gap:10px;
+}
+.fd-button{
+  padding:5px 10px;
+  font-family:"Montserrat";
+  font-weight:500;
+  font-size:18px;
+  border-radius:5px;
+  cursor:pointer;
+  border: 0px;
+  background: var(--fd-col);
+  color:white;
+  box-shadow: 0px 0px 30px -6px var(--fd-col);
+  transition:box-shadow .2s;
+}
+.fd-button:hover{
+  box-shadow: 0px 0px 30px -3px var(--fd-col) !important;
+}
+#fd-continue{
+  --fd-col: #2a9e06;
+}
