@@ -18,7 +18,7 @@
   transition:opacity .3s;
 }
 #fd-popup{
-  scale: 0px;
+  scale: 0;
   transform:translateY(100px);
   transition: scale .3s, transform .3s;
   background:white;
